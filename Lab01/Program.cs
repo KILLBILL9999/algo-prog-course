@@ -1,3 +1,4 @@
+// ===== БЛОК 1: Знакомство, математика и строки
 string myName = "Блудилин Артём Иванович";
 string groupName = "ИСП-252";
 int courseNumber = 2;
@@ -90,51 +91,3 @@ int remainingMinutes = totalMinutes % minutesPerLesson;
 Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {remainingMinutes} минут");
 
 
-
-
-string fullName = "Блудилин Артём Иванович";
-string groupName = "ИСП-252";
-int courseNumber = 2;
-string specialty = "09.02.07";
-bool isBudget = true;
-
-double grade1 = 5.0;
-double grade2 = 4.0;
-double grade3 = 4.0;
-
-double averageGrade = (grade1 + grade2 + grade3) / 3.0;
-
-const double ScholarshipThreshold = 4.0;
-bool isScholarshipEligible = averageGrade >= ScholarshipThreshold;
-
-int totalWeeksInSemester = 20;
-int weeksPassed = 4;
-int weeksLeft = totalWeeksInSemester - weeksPassed;
-
-Console.WriteLine("================================");
-Console.WriteLine("ВИЗИТНАЯ КАРТОЧКА СТУДЕНТА");
-Console.WriteLine("================================");
-Console.WriteLine($"ФИО: {fullName}");
-Console.WriteLine($"Группа: {groupName}");
-Console.WriteLine($"Курс: {courseNumber}");
-Console.WriteLine($"Специальность: {specialty}");
-Console.WriteLine();
-Console.WriteLine($"Средний балл за 3 работы: {averageGrade:F2}");
-Console.WriteLine($"Стипендия положена (>= {ScholarshipThreshold}): {isScholarshipEligible}");
-Console.WriteLine($"Бюджетное место: {isBudget}");
-Console.WriteLine();
-Console.WriteLine($"Учебных недель осталось в семестре: {weeksLeft}");
-Console.WriteLine("================================");
-
-
-
-double celsius = 23.5;
-
-const double FahrenheitMultiplier = 9.0 / 5.0;
-const double FahrenheitOffset = 32.0;
-const double KelvinOffset = 273.15;
-
-double fahrenheit = celsius * FahrenheitMultiplier + FahrenheitOffset;
-double kelvin = celsius + KelvinOffset;
-
-Console.WriteLine($"{celsius:F1}°C = {fahrenheit:F1}°F = {kelvin:F2}K");
